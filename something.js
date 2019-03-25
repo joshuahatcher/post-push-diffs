@@ -14,4 +14,16 @@ someModule.checkServiceFunc = function() {
   }
 }
 
+<<<<<<< HEAD
+=======
+// Here's a comment...
+someModule.isSomeOtherModule = function() {
+  if (someOtherModule.exists()) {
+    return true;
+  }
+
+  return false;
+}
+
+>>>>>>> b58dad4... SOMETHING: Add comment
 module.exports = someModule;
