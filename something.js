@@ -15,6 +15,7 @@ someModule.checkServiceFunc = function() {
   }
 }
 
+// Here's a comment...
 someModule.isSomeOtherModule = function() {
   if (someOtherModule.exists()) {
     return true;
