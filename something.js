@@ -1,4 +1,5 @@
 import * as someService from './some-svc.js';
+import * as someOtherModule from './something-else.js';
 
 const someModule = {};
 
@@ -12,6 +13,14 @@ someModule.checkServiceFunc = function() {
   } else {
     console.log('Did not find service function...');
   }
+}
+
+someModule.isSomeOtherModule = function() {
+  if (someOtherModule.exists()) {
+    return true;
+  }
+
+  return false;
 }
 
 module.exports = someModule;
