@@ -1,4 +1,5 @@
 import * as someService from './some-svc.js';
+import * as someOtherModule from './something-else.js';
 
 const someModule = {};
 
@@ -14,8 +15,6 @@ someModule.checkServiceFunc = function() {
   }
 }
 
-<<<<<<< HEAD
-=======
 // Here's a comment...
 someModule.isSomeOtherModule = function() {
   if (someOtherModule.exists()) {
@@ -25,5 +24,4 @@ someModule.isSomeOtherModule = function() {
   return false;
 }
 
->>>>>>> b58dad4... SOMETHING: Add comment
 module.exports = someModule;
