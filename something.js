@@ -24,4 +24,6 @@ someModule.isSomeOtherModule = function() {
   return false;
 }
 
+// This comment should get into the diff
+
 module.exports = someModule;
