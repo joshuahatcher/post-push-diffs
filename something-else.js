@@ -8,4 +8,6 @@ someOtherModule.exists = function() {
   return true; // This module exists, after all!
 }
 
+// This comment should NOT get into the diff
+
 module.exports = someOtherModule;
