@@ -7,6 +7,8 @@ someModule.someFunc = function() {
   console.log('Here is some code...');
 }
 
+// This comment should NOT get into the diff
+
 someModule.checkServiceFunc = function() {
   if (someService.someServiceFunc) {
     console.log('Found service function...');
