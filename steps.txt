@@ -1,0 +1,17 @@
+starting commit: ee017a117b9f4c33ffe64d2b3dfe3fe2a3c84d30
+ending commit: 97bb2423562c31e79564f1b1ae4dff6cb95bfab3
+
+KEY:
+- UNIQUE_STRING = unique string pertaining to feature (will tag each commit message of the feature with this string)
+- COMMIT_BEGIN = commit right before the first one for this feature
+- COMMIT_END = last commit of this feature
+
+STEPS:
+- tag each commit message with '<UNIQUE_STRING>'; commit directly to master per normal
+- when project finished, create branch off of master (BRANCH_1)
+- on new branch, run:
+  `git reset --hard <COMMIT_BEGIN>`
+- branch off of this branch (BRANCH_2), run:
+  `git cherry-pick $(git rev-list <COMMIT_BEGIN>..<COMMIT_END> --grep="^SOMETHING: ")`
+- push up both branches
+- make pull request from BRANCH_2 into BRANCH_2
