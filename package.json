@@ -1,0 +1,21 @@
+{
+  "name": "post-push-diffs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "make-pr.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuahatcher/post-push-diffs.git"
+  },
+  "author": "Joshua Hatcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuahatcher/post-push-diffs/issues"
+  },
+  "homepage": "https://github.com/joshuahatcher/post-push-diffs#readme"
+}
